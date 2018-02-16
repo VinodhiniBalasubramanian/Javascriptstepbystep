@@ -1,0 +1,51 @@
+<html>
+<body>
+
+<p>Click the button to display a random number between 1 and 10.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var x = Math.floor((Math.random() * 10) + 1);
+	switch(x){
+		case 1:
+		x="one";
+		break;
+		case 2:
+		x="two";
+		break;
+		case 3:
+		x="three";
+		break;
+		case 4:
+		x="four";
+		break;
+		case 5:
+		x="five";
+		break;
+		case 6:
+		x="six";
+		break;
+		case 7:
+		x="seven";
+		break;
+		case 8:
+		x="eight";
+		break;
+		case 9:
+		x="nine";
+		break;
+		case 10:
+		x="Ten";
+		}
+		 document.getElementById("demo").innerHTML = x;
+		
+		
+}
+</script>
+
+</body>
+</html>

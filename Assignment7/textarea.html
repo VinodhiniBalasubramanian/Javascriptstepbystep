@@ -1,0 +1,28 @@
+<html>
+<body>
+
+<h3>A demonstration of how to access a TEXTAREA element</h3>
+
+FEEDBACK:<br>
+<textarea id="myTextarea" maxlength="30"></textarea>
+
+<button type="button" onclick="javascript:validate()">Try it</button>
+
+<p id="demo"></p>
+
+<script language="JavaScript">
+function validate() {
+				if (document.getElementById("myTextarea").value > "30"){
+                   alert("Enter only 200 characters");
+                   document.getElementById("myTextarea").focus();
+				}
+               else {
+                   var x = document.getElementById("myTextarea").value;
+					document.getElementById("demo").innerHTML = x;
+               }
+            }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+<head>
+<script language="JavaScript">
+	email="MeetAt@Wipro.com";
+	indexvalue=email.indexOf('@');
+	lastindexvalue=email.lastIndexOf('@');
+	if(indexvalue===lastindexvalue)
+	{
+	document.write("valid emailId" +"<br>");
+	}
+	else
+	{
+	document.write("Invalid emailId"+"<br>");
+	}
+	
+  var count = 0;
+  for(var i=0; i<email.length; i++) {
+  	if(email[i] === '.') {
+    	count++;
+    }
+  }
+ document.write("occurence of . is "+count);
+</script>
+</head>
+<body>
+</body>
+</html>

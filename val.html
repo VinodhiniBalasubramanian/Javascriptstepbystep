@@ -1,0 +1,40 @@
+<html>
+<head>
+<h1> ENTER DETAILS </h1>
+<table>
+	<tr>
+	<td>Name(*)</td>
+	<td><form name="frm1"><input type="text" name="text1" min="3" required></form></td>
+	</tr>
+	<tr>
+	<td>Age(*)</td>
+	<td><form name="frm2"><input type="number" name="text2" min="1" max="100" required></form></td>
+	</tr>
+	<tr>
+	<td>Email(*)</td>
+	<td><form name="frm3"><input type="text" name="text3" required></form></td>
+	</tr>
+</table>
+(*)Mandatory Fields <input type="button" value="Submit" onClick="data()">
+
+<script language="JavaScript">
+	function data()
+	{
+		if(document.frm1.text1.value=="")
+			alert("Its mandatory to fill the Name field");
+		if(document.frm2.text2.value=="")
+			alert("Its mandatory to fill the Age field");
+		if(document.frm3.text3.value=="")
+			alert("Its mandatory to fill the Email field");
+		var email=document.frm3.text3.value
+		var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+			if (!filter.test(email)) {
+				alert('Please provide a valid email address');
+				email.focus;
+				return false;
+		}
+	}
+</script>
+<body>
+</body>
+</html>

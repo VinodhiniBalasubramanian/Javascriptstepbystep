@@ -1,0 +1,24 @@
+<html>
+<head>
+<script language="JavaScript">
+function disp()
+{
+	ind = document.f1.webs.selectedIndex;
+	//Comments : index of the selected Item
+	alert("the text is  \n"+document.f1.webs.options[ind].text);
+    window.open(document.f1.webs.selectedIndex);
+
+}
+</script>
+</head>
+<body>
+<form name="f1">
+<select name="webs" onchange="disp()">
+	<option  value="http://sparsh"> http://sparsh
+	<option  value="http://sparsh"> http://sparsh
+	<option value=" http://172.21.20.155/"> http://172.21.20.155/
+	<option value="http://newmywipro.wipro.com/">http://newmywipro.wipro.com/
+</select>
+</form>
+</body>
+</html>

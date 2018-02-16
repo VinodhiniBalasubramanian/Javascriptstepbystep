@@ -1,0 +1,50 @@
+<html>
+<body>
+<input id="myInput" type="text">
+<button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+<script>
+function myFunction() {
+    var text;
+    var letter = document.getElementById("myInput").value;
+
+    switch(letter) {
+        case "A":
+            text = "Is a vowel";
+        break;
+        case "E":
+			text = "Is a vowel";
+        break;
+        case "I":
+			text = "Is a vowel";
+        break;
+		case "O":
+			text = "Is a vowel";
+        break;
+		case "U":
+			text = "Is a vowel";
+        break;
+		case "a":
+            text = "Is a vowel";
+        break;
+        case "e":
+			text = "Is a vowel";
+        break;
+        case "i":
+			text = "Is a vowel";
+        break;
+		case "o":
+			text = "Is a vowel";
+        break;
+		case "u":
+			text = "Is a vowel";
+        break;
+        default:
+			text = "Is not a vowel";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>

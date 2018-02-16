@@ -1,0 +1,86 @@
+<html>
+<head>
+<script language="JavaScript">
+function addNum()
+{
+	num1=parseInt(document.frmadd.txt1.value);
+	num2=parseInt(document.frmadd.txt2.value);
+	num3=num1+num2;
+	document.frmadd.txt3.value=num3;
+	if(!isFinite(num1))
+		{
+			alert("Please eneter a number!");
+			//return false;
+		}
+if(!isFinite(num2))
+		{
+			alert("Please eneter a number!");
+			//return false;
+		}
+
+}
+function subNum()
+{
+	num1=parseInt(document.frmadd.txt1.value);
+	num2=parseInt(document.frmadd.txt2.value);
+	if(num1>num2)
+	num4=num1-num2;
+	else
+	num4=num2-num1;
+	document.frmadd.txt4.value=num4;
+	if(!isFinite(num1))
+		{
+			alert("Please eneter a number!");
+			//return false;
+		}
+if(!isFinite(num2))
+		{
+			alert("Please eneter a number!");
+			//return false;
+		}
+
+}
+function mulNum()
+{
+	num1=parseInt(document.frmadd.txt1.value);
+	num2=parseInt(document.frmadd.txt2.value);
+	num5=num1*num2;
+	document.frmadd.txt5.value=num5;
+	if(!isFinite(num1))
+		{
+			alert("Please eneter a number!");
+			//return false;
+		}
+if(!isFinite(num2))
+		{
+			alert("Please eneter a number!");
+			//return false;
+		}
+
+}
+
+</script>
+</head>
+<body>
+<form name="frmadd">
+	Num1 <input type="text" name="txt1"><br>
+	Num2 <input type="text" name="txt2"><br>
+	Add <input type="text" name="txt3" disabled><br>
+<input type="button" value="Add" name="but1" onclick="addNum()">
+</form>
+<form name="frmsub">
+	Num1 <input type="text" name="txt1"><br>
+	Num2 <input type="text" name="txt2"><br>
+	Subtract <input type="text" name="txt4" disabled><br>
+<input type="button" value="Sub" name="but1" onclick="subNum()">
+</form>
+<form name="frmmul">
+	Num1 <input type="text" name="txt1"><br>
+	Num2 <input type="text" name="txt2"><br>
+	Multiply <input type="text" name="txt5" disabled><br>
+<input type="button" value="Mul" name="but1" onclick="mulNum()">
+</form>
+</body>
+</html>
+
+
